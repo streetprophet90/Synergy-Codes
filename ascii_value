@@ -8,6 +8,9 @@ printf("Please Enter a Character\n");
 
 scanf("%c", &character);
 
+// %d displays the integer value of a character
+// %c displays the actual character
+
 printf("The ASCII value of %c is %d\n", character, character);
 
 return 0;
