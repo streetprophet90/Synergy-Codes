@@ -16,3 +16,13 @@ printf("The ASCII value of %c is %d\n", character, character);
 return 0;
 }
 
+//Generating the ASCII Value with the getchar function. 
+#include <stdio.h>
+
+int main() {
+    char character;
+    printf("Enter a character: ");
+    character=getchar();
+    printf("The ASCII value of %c is %d\n", character, character);
+    return 0;
+}
