@@ -25,3 +25,31 @@ def triangle_area(b, h):
 
 new_area = triangle_area(2, 3)
 print(new_area)
+
+
+# Write a keyword function that converts inch and feet to centimeters
+
+def cm(foot=0, inch=0):
+	"""Converts feet and inch to cm given inch and/or feet"""
+	inch_to_cm = inch * 2.54
+	foot_to_cm = foot * 12 * 2.54
+	return inch_to_cm + foot_to_cm
+
+# Call the function and convert inch to cm
+cm(inch=12)
+
+# call the function and convert feet to cm
+cm(foot=2)
+
+# call the function and convert both feet and inches to cm
+inch_foot = cm(foot=2, inch = 12)
+print(inch_foot)
+
+"""You can use both keyword arguments and required arguments. However, the required
+arguments must always come first"""
+
+def fnx(y, x=0): #in this function both required and keyword arguments have been used
+	return x+y
+
+fnx(x)
+	
