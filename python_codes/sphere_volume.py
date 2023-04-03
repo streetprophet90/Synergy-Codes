@@ -51,5 +51,5 @@ arguments must always come first"""
 def fnx(y, x=0): #in this function both required and keyword arguments have been used
 	return x+y
 
-fnx(x)
+fnx(6, x=3)
 	
