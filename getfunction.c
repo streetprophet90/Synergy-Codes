@@ -14,7 +14,7 @@ int main() {
     // Calculate the age
     age = currentYear - birthYear;
     
-    // Output the age
+    // Output of the age
     printf("The age of a sixteen-year-old in %d is: %d\n", currentYear, age);
     
     return 0;
