@@ -1,0 +1,31 @@
+/*
+Given a positive integer num,
+return the sum of all odd Fibonacci numbers
+that are less than or equal to num.
+*/
+
+function sumFibs(num) {
+let fib = [0, 1];
+let oddFib = [];
+let sum = 0;
+
+//iterate and push the results of the additoin of the 2 consecutive numbers
+
+for (let i = 1; fib[i]< num; i++){
+fib.push(fib[fib.length -1] + fib[fib.length - 2]);
+}
+
+// iterate and push the odd numbers less than or equal to num into a new array
+for (let j = 0; j<fib.length; j++){
+if (fib[j]%2 !=0 && fib[j]<= num){
+oddFib.push(fib[j])
+}
+}
+//add the elements of the new array
+for (let k = 0; k< oddFib.length; k ++){
+sum += oddFib[k];
+}
+//  console.log(fib);
+// console.log(oddFib);
+return sum;
+}
