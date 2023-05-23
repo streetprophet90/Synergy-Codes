@@ -1,0 +1,31 @@
+// To check for prime number less than a certain number num
+
+function sumPrimes(num) {
+let sum =  0;
+let arr = [];
+// Iterate over all numbers less than num
+for (let i = 2; i <= num; i++){
+// Let's assume that the numbers are prime until otherwise proven
+  let isPrime = true;
+// Let's try to prove if the numbers are truely prime by
+// picking every number above and finding its modulus with
+// all numbers lesser than it.
+
+  for (let j = 2; j < i; j++){
+    if (i % j === 0){
+      isPrime = false;
+    }
+  }
+  // Call all the numbers which passed the above condition
+// of isPrime and add them increamentally.
+
+  if (isPrime){
+    arr.push(i);
+    sum += i;
+  }
+  }
+  // console.log(arr);
+  return sum;
+}
+
+console.log(sumPrimes(5));
